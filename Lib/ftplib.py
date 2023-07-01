@@ -499,7 +499,7 @@ class FTP:
                     callback(buf)
             # shutdown ssl layer
             if _SSLSocket is not None and isinstance(conn, _SSLSocket):
-                conn.unwrap()
+                pass
         return self.voidresp()
 
     def storlines(self, cmd, fp, callback=None):
